@@ -1,16 +1,14 @@
-import * as monaco from "monaco-editor";
-
 interface IDiagnosticSchemaMap {
   [k: string]: any;
 }
 
 const diagnosticSchemaMap: IDiagnosticSchemaMap = {};
 
-export function addDiagnostics(uri: string, schema: any): void {
+export function addDiagnostics(uri: string, schema: any, monaco: any): void {
   diagnosticSchemaMap[uri] = schema;
-  monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+  const diagnosticOptions = {
     enableSchemaRequest: true,
-    schemas: Object.values(diagnosticSchemaMap).map(([u, s]: [string, any]) => {
+    schemas: Object.entries(diagnosticSchemaMap).map(([u, s]: [string, any]) => {
       return {
         fileMatch: [u],
         schema: s,
@@ -18,5 +16,6 @@ export function addDiagnostics(uri: string, schema: any): void {
       };
     }),
     validate: true,
-  });
+  };
+  monaco.languages.json.jsonDefaults.setDiagnosticsOptions(diagnosticOptions);
 }
