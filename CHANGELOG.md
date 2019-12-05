@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/etclabscore/monaco-add-diagnostics/compare/1.0.2...1.0.3) (2019-12-05)
+
+
+### Bug Fixes
+
+* take monaco as injected dep ([d41643e](https://github.com/etclabscore/monaco-add-diagnostics/commit/d41643e40254452b5a76e11f78b3f3547d70d822))
+
 ## [1.0.2](https://github.com/etclabscore/monaco-add-diagnostics/compare/1.0.1...1.0.2) (2019-12-05)
 
 
