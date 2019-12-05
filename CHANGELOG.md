@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/etclabscore/monaco-add-diagnostics/compare/1.0.0...1.0.1) (2019-12-05)
+
+
+### Bug Fixes
+
+* use uri as filematch ([8559f5f](https://github.com/etclabscore/monaco-add-diagnostics/commit/8559f5f7a59b0ef639dc8a4f17392b17476c560a))
+
 # 1.0.0 (2019-12-05)
 
 
