@@ -12,7 +12,7 @@ export function addDiagnostics(uri: string, schema: any): void {
     enableSchemaRequest: true,
     schemas: Object.values(diagnosticSchemaMap).map(([u, s]: [string, any]) => {
       return {
-        fileMatch: ["*"],
+        fileMatch: [u],
         schema: s,
         uri: u,
       };
