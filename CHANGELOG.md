@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/etclabscore/monaco-add-diagnostics/compare/1.0.1...1.0.2) (2019-12-05)
+
+
+### Bug Fixes
+
+* gh-pages typedocs ([47d57bb](https://github.com/etclabscore/monaco-add-diagnostics/commit/47d57bbdd3d1bc677871059d58cd8f0b66fa4613))
+
 ## [1.0.1](https://github.com/etclabscore/monaco-add-diagnostics/compare/1.0.0...1.0.1) (2019-12-05)
 
 
